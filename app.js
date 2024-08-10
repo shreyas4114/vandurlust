@@ -7,6 +7,9 @@ const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
 const wrapAsync = require("./utils/wrapAsync.js")
 const ExpressError = require("./utils/expressError.js")
+require('dotenv').config();
+
+mongoose.connect(process.env.MONGO_URL);
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
@@ -88,7 +91,7 @@ app.use((err, req, res, next) => {         // error handling middleware
     res.status(statusCode).render("error.ejs", {err});
 })
 
-const PORT = 8080;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
