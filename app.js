@@ -8,8 +8,6 @@ const ejsMate = require("ejs-mate");
 const wrapAsync = require("./utils/wrapAsync.js")
 const ExpressError = require("./utils/expressError.js")
 
-mongoose.connect('mongodb+srv://shreyas0411:Shreyas0411@cluster0.xtbvp42.mongodb.net/Major_Project');
-
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({ extended: true }));
