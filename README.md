@@ -1,7 +1,8 @@
 ## Vanderlust
 
 <p>This Website provides comprehensive listings of various stays.</p>
-![Screenshot 2024-08-23 173959](https://github.com/user-attachments/assets/036c3483-9d35-4bac-8717-b4e4120a46b2)
+
+![Screenshot 2024-08-23 174658](https://github.com/user-attachments/assets/91dd2a98-0711-4354-8d68-680e6871c6bc)
 
 <h3>View Stay</h3>
 
